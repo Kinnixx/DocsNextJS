@@ -1,4 +1,5 @@
-// On récupère le documentId
+import { Editor } from "./editor";
+
 interface DocumentIdPageProps {
     params: { documentId: string };
 }
@@ -8,8 +9,8 @@ const DocumentIdPage = ({params}: DocumentIdPageProps) => {
     const { documentId } = params;
     
     return ( 
-        <div>
-            Document Id: {documentId}
+        <div className="min-h-screen bg-[#FAFBFD]">
+            <Editor />
         </div>
      );
 }
